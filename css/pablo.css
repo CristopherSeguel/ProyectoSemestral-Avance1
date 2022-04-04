@@ -1,0 +1,14 @@
+.formulaCatalogo{
+    background: rgba(12, 10, 10, 0.5);
+    padding: 50px;
+    
+}
+
+body{
+    
+    background: linear-gradient(to right,#4b0c18, #e68383);
+}
+
+.cardjuegos{
+    background: rgb(131, 125, 125);
+}
