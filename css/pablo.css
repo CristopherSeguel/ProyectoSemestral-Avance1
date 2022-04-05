@@ -12,3 +12,18 @@ body{
 .cardjuegos{
     background: rgb(131, 125, 125);
 }
+
+.card-img-top{
+    
+    height: 400px;
+    width: 286px;
+
+
+}
+
+.btn-primary{
+    	background-color: #6e2121;
+        border-color: rgb(0 0 0 / 20%);
+
+}
+
