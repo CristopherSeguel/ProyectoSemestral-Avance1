@@ -1,34 +1,38 @@
-.formulaCatalogo{
-    background: rgba(12, 10, 10, 0.5);
-    padding: 50px;
-    
+.formulaCatalogo {
+  background: rgba(12, 10, 10, 0.5);
+  padding: 50px;
 }
 
-body{
-    
-    background: linear-gradient(to right,#4b0c18, #e68383);
+body {
+  background: radial-gradient(#8b1a1a, #000000, rgb(21 105 187));
 }
 
-.cardjuegos{
-    background: rgb(131, 125, 125);
+.cardjuegos {
+  background: rgb(66 31 31);
 }
 
-.card-img-top{
-    
-    height: 400px;
-    width: 286px;
-
-
+.card-img-top {
+  height: 400px;
+  width: 286px;
+  background-color: #441c1c;
 }
 
-.btn-primary{
-    	background-color: #6e2121;
-        border-color: rgb(0 0 0 / 20%);
-
+.btn-primary {
+  background-color: #6e2121;
+  border-color: rgba(8, 8, 8, 0.2);
 }
 
-.card-title{
-    height: 72px;
-    margin: auto;
-    
+.card-title {
+  height: 72px;
+  margin: auto;
+  color: #ffffff;
 }
+
+.card-text {
+  color: #ffffff;
+}
+.card{
+  background-color: #002bff9e;
+}
+
+
