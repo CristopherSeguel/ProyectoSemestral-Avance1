@@ -4,7 +4,7 @@ img.redimention{
 }
 
 body{
-  background: linear-gradient(to right,#4b0c18, #e68383);
+  background: linear-gradient(to right,#4b0c18, #b71c1c);
 }
 .NoticiasRelevantes{
     background: rgba(12, 10, 10, 0.5);
@@ -20,7 +20,7 @@ body{
   }
 
   .NoticiasSemanales2{
-    background: linear-gradient(to right,#90001b, #e68383);
+    background: linear-gradient(to right,#4b0c18, #b71c1c);
     padding: 20px;
     
 
