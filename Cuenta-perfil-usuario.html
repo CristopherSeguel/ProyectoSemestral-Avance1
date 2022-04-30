@@ -117,8 +117,8 @@
 <body>
 
 
+  <!-- BARRA NAVEGACIÓN -->
 
-  <!--NAVBAR-->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark border-primary">
     <div class="container-fluid">
       <a href="#" class="navbar-brand"><img src="img/logo_small.png" alt="" width="100"></a>
@@ -144,11 +144,11 @@
 
 
         <li class="nav-item">
-          <a class="nav-link" href="Lanzamientos.html">LANZAMIENTOS</a>
+          <a class="nav-link" href="Lanzamientos.html">Lanzamientos</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="catalogoPc.html">COMPRAS</a>
+          <a class="nav-link" href="catalogoPc.html">Catalogo</a>
         </li>
 
 
@@ -180,21 +180,22 @@
 
 
 
+
   <div class="container" style="margin-bottom: 70px;">
     <div class="row justify-content-center pt-5 mt-5 mr-1">
       <div class="col-md-12 formulario3">
 
 
 
-        <div class="container-lg mt-5">
+        <div class="container-lg mt-5" >
           <div class="row">
-            <div class="col-lg-3">
-              <div class="accordion mb-2" id="accordionExample">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
+            <div class="col-lg-3" >
+              <div class="accordion mb-2" id="accordionExample"  >
+                <div class="card" >
+                  <div class="card-header" id="headingOne" >
                     <h2 class="mb-0">
                       <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                        aria-controls="collapseOne">
+                        aria-controls="collapseOne" >
                         <span><i class="fa fa-user"></i> Cuenta</span>
                         <i class="fa fa-chevron-down toggle"></i>
                       </a>
@@ -207,7 +208,8 @@
                             Perfil</a></li>
                         <li class="list-group-item"><a href="Cuenta-Editar-usuario.html"><i
                               class="fa fa-pencil"></i>Editar Perfil</a></li>
-                        <li class="list-group-item"><a href="Cuenta-CambiarContra-usuario.html"><i class="fa fa-key"></i> Cambiar Contraseña</a></li>
+                        <li class="list-group-item"><a href="Cuenta-CambiarContra-usuario.html"><i
+                              class="fa fa-key"></i> Cambiar Contraseña</a></li>
                         <li class="list-group-item"><a href="#" class="text-danger"><i class="fa fa-trash"></i> Delete
                             Account</a></li>
                       </ul>
@@ -218,7 +220,7 @@
                   <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
                       <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                        aria-controls="collapseTwo">
+                        aria-controls="collapseTwo" >
                         <span><i class="fa fa-users"></i> Administrar</span>
                         <i class="fa fa-chevron-down toggle rotate"></i>
                       </a>
@@ -228,7 +230,8 @@
                     data-parent="#accordionExample">
                     <div class="card-body">
                       <ul class="list-group">
-                        <li class="list-group-item"><a href="#"><i class="fa fa-inbox"></i> Administrar Usuarios <span
+                        <li class="list-group-item"><a href="CuentaAdmin-EditarUsuarios.html"><i
+                              class="fa fa-inbox"></i> Administrar Usuarios <span
                               class="badge badge-pill badge-primary">20</span></a></li>
                         <li class="list-group-item"><a href="#"><i class="fa fa-paper-plane"></i> Editar Usuarios</a>
                         </li>
@@ -243,7 +246,7 @@
                   <div class="card-header" id="headingThree">
                     <h2 class="mb-0">
                       <a data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                        aria-controls="collapseThree">
+                        aria-controls="collapseThree" >
                         <span><i class="fa fa-bar-chart"></i> Estadisticas</span>
                         <i class="fa fa-chevron-down toggle"></i>
                       </a>
@@ -294,7 +297,7 @@
               <div class="row">
                 <div class="col mb-3">
                   <div class="card">
-                    <div class="card-body">
+                    <div class="card-body ">
                       <div class="e-profile">
                         <div class="row">
                           <div class="col-12 col-sm-auto mb-3">
@@ -307,19 +310,19 @@
                               <div class="container py-5">
                                 <div class="row">
                                   <div class="col-lg-4">
-                                    <div class="card mb-4">
+                                    <div class="card mb-4 border-dark">
                                       <div class="card-body text-center">
                                         <img src="img/usuarios/D9x4CHMM_400x400.jpg" alt="avatar"
                                           class="rounded-circle img-fluid" style="width: 150px;">
                                         <h5 class="my-3">Roman Rojas</h5>
                                         <p class="text-muted mb-1">Periodista/Analista</p>
                                         <div class="d-flex justify-content-center mb-2">
-                                          <button type="button" class="btn btn-primary">Editar</button>
-                                          <button type="button" class="btn btn-outline-primary ms-1">Eliminar</button>
+                                          
+                                          <button type="button" class="btn btn btn-dark ms-1">Eliminar</button>
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="card mb-4 mb-lg-0">
+                                    <div class="card mb-4 mb-lg-0 border-dark">
                                       <div class="card-body p-0">
                                         <ul class="list-group list-group-flush rounded-3">
                                           <li
@@ -338,11 +341,11 @@
                                     </div>
                                   </div>
                                   <div class="col-lg-8">
-                                    <div class="card mb-4">
+                                    <div class="card mb-4 border-dark">
                                       <div class="card-body">
                                         <div class="row">
                                           <div class="col-sm-5">
-                                            <p class="mb-0" style="color: black;">Nombre de usuario</p>
+                                            <p class="mb-0" id="p_colorAdmin">Nombre de usuario</p>
                                           </div>
                                           <div class="col-sm-7">
                                             <p class="text-muted mb-0">SpaceRonin7</p>
@@ -351,7 +354,7 @@
                                         <hr>
                                         <div class="row">
                                           <div class="col-sm-5">
-                                            <p class="mb-0" style="color: black;">Correo Electronico</p>
+                                            <p class="mb-0" id="p_colorAdmin">Correo Electronico</p>
                                           </div>
                                           <div class="col-sm-7">
                                             <p class="text-muted mb-0">romanrojas25@gmail.com</p>
@@ -360,7 +363,7 @@
                                         <hr>
                                         <div class="row">
                                           <div class="col-sm-5">
-                                            <p class="mb-0" style="color: black;">Tipo de usuario</p>
+                                            <p class="mb-0" id="p_colorAdmin">Tipo de usuario</p>
                                           </div>
                                           <div class="col-sm-7">
                                             <p class="text-muted mb-0">Administrador</p>
@@ -370,21 +373,24 @@
                                     </div>
                                     <div class="row">
                                       <div class="col-md-6">
-                                        <div class="card mb-4 mb-md-0">
-                                          <div class="card-body" style="background-color: #61656b;">
-                                            <p class="mb-4"><span class="text-primary font-italic me-1">Noticias</span>
+                                        <div class="card mb-4 mb-md-0 border-dark">
+                                          <div class="card-body">
+                                            <p class="mb-4" id="p_colorAdmin">Noticias
                                             </p>
-                                            <p class="mb-1" style="font-size: .77rem;"> Cantidad de Noticias</p>
+                                            <p class="text-muted mb-1" style="font-size: .77rem;" id="p_color"> Cantidad
+                                              de Noticias</p>
                                             <div class="progress rounded" style="height: 5px;">
                                               <div class="progress-bar" role="progressbar" style="width: 80%"
                                                 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <p class="mt-4 mb-1" style="font-size: .77rem;">Numero de visitas</p>
+                                            <p class="text-muted mt-4 mb-1" style="font-size: .77rem;" id="p_color">
+                                              Numero de visitas</p>
                                             <div class="progress rounded" style="height: 5px;">
                                               <div class="progress-bar" role="progressbar" style="width: 72%"
                                                 aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <p class="mt-4 mb-1" style="font-size: .77rem;">Comentarios</p>
+                                            <p class="text-muted mt-4 mb-1" style="font-size: .77rem;" id="p_color">
+                                              Comentarios</p>
                                             <div class="progress rounded" style="height: 5px;">
                                               <div class="progress-bar" role="progressbar" style="width: 89%"
                                                 aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
@@ -394,21 +400,24 @@
                                         </div>
                                       </div>
                                       <div class="col-md-6">
-                                        <div class="card mb-4 mb-md-0">
-                                          <div class="card-body" style="background-color: #61656b;">
-                                            <p class="mb-4"><span class="text-primary font-italic me-1">Analisis</span>
+                                        <div class="card mb-4 mb-md-0 border-dark">
+                                          <div class="card-body">
+                                            <p class="mb-4" id="p_colorAdmin">Analisis
                                             </p>
-                                            <p class="mb-1" style="font-size: .77rem;">Cantidad de Analisis</p>
+                                            <p class="mb-1 text-muted" style="font-size: .77rem;" id="p_color">Cantidad
+                                              de Analisis</p>
                                             <div class="progress rounded" style="height: 5px;">
                                               <div class="progress-bar" role="progressbar" style="width: 80%"
                                                 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <p class="mt-4 mb-1" style="font-size: .77rem;">Numero de visitas</p>
+                                            <p class="text-muted mt-4 mb-1" style="font-size: .77rem;" id="p_color">
+                                              Numero de visitas</p>
                                             <div class="progress rounded" style="height: 5px;">
                                               <div class="progress-bar" role="progressbar" style="width: 72%"
                                                 aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <p class="mt-4 mb-1" style="font-size: .77rem;">Comentarios</p>
+                                            <p class="text-muted mt-4 mb-1" style="font-size: .77rem;" id="p_color">
+                                              Comentarios</p>
                                             <div class="progress rounded" style="height: 5px;">
                                               <div class="progress-bar" role="progressbar" style="width: 89%"
                                                 aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>

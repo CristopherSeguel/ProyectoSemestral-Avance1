@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
         integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
 
     <style>
         .accordion .card {
@@ -111,7 +113,7 @@
     </style>
     <script>
         $(document).ready(function () {
-        
+            // Toggle plus minus icon on show hide of collapse element
             $(".collapse").on('show.bs.collapse', function () {
                 $(this).parent(".card").find(".toggle").addClass("rotate");
             }).on('hide.bs.collapse', function () {
@@ -238,7 +240,8 @@
                                         data-parent="#accordionExample">
                                         <div class="card-body">
                                             <ul class="list-group">
-                                                <li class="list-group-item"><a href="CuentaAdmin-EditarUsuarios.html"><i class="fa fa-inbox"></i>
+                                                <li class="list-group-item"><a href="CuentaAdmin-EditarUsuarios.html"><i
+                                                            class="fa fa-inbox"></i>
                                                         Administrar Usuarios <span
                                                             class="badge badge-pill badge-primary">20</span></a></li>
                                                 <li class="list-group-item"><a href="#"><i
@@ -283,7 +286,7 @@
                                         <h2 class="mb-0">
                                             <a data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
                                                 aria-controls="collapseFour">
-                                                <span><i class="fa fa-cog"></i> Buscar Post</span>
+                                                <span><i class="fa fa-cog"></i> Publicaciones</span>
                                                 <i class="fa fa-chevron-down toggle"></i>
                                             </a>
                                         </h2>
@@ -292,23 +295,28 @@
                                         data-parent="#accordionExample">
                                         <div class="card-body">
                                             <ul class="list-group">
-                                                <li class="list-group-item"><a href="#"><i class="fa fa-font"></i>
-                                                        Typography</a></li>
-                                                <li class="list-group-item"><a href="#"><i class="fa fa-bell"></i>
-                                                        Notifications</a></li>
-                                                <li class="list-group-item"><a href="#"><i class="fa fa-map"></i>
-                                                        Maps</a></li>
+                                                <li class="list-group-item"><a href="CuentaAdmin-BuscarUsuarios.html"><i class="fa fa-search"></i>
+                                                        Buscar Post</a></li>
+                                                <li class="list-group-item"><a href="#"><i
+                                                            class="fa fa-newspaper-o"></i>
+                                                        Publicar Post</a></li>
+
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingFive">
-                                        <h2 class="mb-0"><a href="#"><i class="fa fa-power-off"></i> Logout</a></h2>
+                                        <h2 class="mb-0"><a href="#"><i class="fa fa-power-off"></i> Cerrar Sesion</a>
+                                        </h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+
+
 
                         <!--PERFIL USUARIO-->
 
@@ -321,9 +329,25 @@
                                                 <div class="row">
                                                     <div class="col-12 col-sm-auto mb-3">
 
-                                                        <header style="margin-bottom: 40px;">
-                                                            <h3>Administrar Usuarios</h3>
+                                                        <header style="margin-bottom: 10px;">
+                                                            <h3>Buscar Noticia</h3>
+
+
                                                         </header>
+
+                                                        <div class="d-flex justify-content-end"
+                                                            style="margin-bottom: 40px">
+                                                            <input type="text" id="myInput" onkeyup="myFunction()"
+                                                                placeholder="Buscar por id..." title="Type in a name">
+
+                                                        </div>
+
+
+
+
+
+
+
 
 
 
@@ -334,68 +358,59 @@
                                                                     <thead>
                                                                         <tr>
                                                                             <th scope="col">#</th>
-                                                                            <th scope="col">Nombre de usuario</th>
-                                                                            <th scope="col">Correo Electronico</th>
-                                                                            <th scope="col">Tipo de usuario</th>
-                                                                            <th>Administar</th>
+                                                                            <th scope="col">ID Noticia</th>
+                                                                            <th scope="col">Fecha Noticia</th>
+                                                                            <th scope="col">Usuario</th>
+                                                                            <th scope="col">Ver Noticia</th>
+
+
 
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr>
                                                                             <th scope="row">1</th>
-                                                                            <td>column</td>
-                                                                            <td>column</td>
-                                                                            <td>column</td>
+                                                                            <td>1234</td>
+                                                                            <td>23-04-2022</td>
+                                                                            <td>Jose Perez</td>
                                                                             <td>
+
                                                                                 <button type="button"
                                                                                     class="btn btn-primary"><i
                                                                                         class="far fa-eye"></i></button>
-                                                                                <button type="button"
-                                                                                    class="btn btn-success"><i
-                                                                                        class="fas fa-edit"></i></button>
-                                                                                <button type="button"
-                                                                                    class="btn btn-danger"><i
-                                                                                        class="far fa-trash-alt"></i></button>
                                                                             </td>
 
                                                                         </tr>
                                                                         <tr>
                                                                             <th scope="row">2</th>
-                                                                            <td>column</td>
-                                                                            <td>column</td>
-                                                                            <td>column</td>
+                                                                            <td>1235</td>
+                                                                            <td>21-04-2022</td>
+                                                                            <td>Pablo Perez</td>
                                                                             <td>
+
                                                                                 <button type="button"
                                                                                     class="btn btn-primary"><i
                                                                                         class="far fa-eye"></i></button>
-                                                                                <button type="button"
-                                                                                    class="btn btn-success open-modal"><i
-                                                                                        class="fas fa-edit"></i></button>
-                                                                                <button type="button"
-                                                                                    class="btn btn-danger"><i
-                                                                                        class="far fa-trash-alt"></i></button>
                                                                             </td>
 
                                                                         </tr>
                                                                         <tr>
                                                                             <th scope="row">3</th>
-                                                                            <td>column</td>
-                                                                            <td>column</td>
-                                                                            <td>@column</td>
+                                                                            <td>1236</td>
+                                                                            <td>19-04-2022</td>
+                                                                            <td>Roman Rojas</td>
                                                                             <td>
+
+
                                                                                 <button type="button"
                                                                                     class="btn btn-primary"><i
                                                                                         class="far fa-eye"></i></button>
-                                                                                <button type="button"
-                                                                                    class="btn btn-success"><i
-                                                                                        class="fas fa-edit"></i></button>
-                                                                                <button type="button"
-                                                                                    class="btn btn-danger"><i
-                                                                                        class="far fa-trash-alt"></i></button>
                                                                             </td>
 
                                                                         </tr>
+
+
+
                                                                     </tbody>
                                                                 </table>
                                                             </div>
@@ -407,88 +422,51 @@
                                     </div>
                                 </div>
                             </div>
-
-                                <div class="container" style="padding:150px;">
-        <!----modal starts here--->
-        <div id="modal" class="modal fade" role='dialog'>
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <ng-templat e #editProfileModal let-modal>
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="editProfileLabel" style="color: black;">Editar Perfil</h5>
-                            <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
                         </div>
 
-                        <div class="modal-body">
-                            <form [formGroup]="editProfileForm" (ngSubmit)="onSubmit()">
-                                <div class="form-group row">
-                                    <label for="firstname" class="col-sm-4 col-form-label">Nombre Usuario</label> 
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" formControlName="firstname"
-                                            id="firstname" placeholder="SpaceRonin7"> 
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="lastname" class="col-sm-4 col-form-label">Nombre Completo</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" formControlName="lastname"
-                                            id="lastname" placeholder="Roman Rojas">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="username" class="col-sm-4 col-form-label">Tipo Usuario</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" formControlName="username"
-                                            id="username" placeholder="Administrador">
-                                    </div>
-                                </div>
-
-                                <h6 class="modal-title" style="margin-bottom: 20px; color: black;" id="editProfileLabel">Redes Sociales</h6>
-
-                                <div class="form-group row">
-                                    <label for="email" class="col-sm-4 col-form-label">Twitter</label>
-                                    <div class="col-sm-8">
-                                        <input type="email" class="form-control" formControlName="email" id="email" placeholder="https://twitter.com/spaceronin7?lang=es">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label for="email" class="col-sm-4 col-form-label">Twitch</label>
-                                    <div class="col-sm-8">
-                                        <input type="email" class="form-control" formControlName="email" id="email" placeholder="https://www.twitch.tv/spaceronin7">
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        (click)="modal.dismiss()">Cerrar</button>
-                                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                                </div>
-                            </form>
-                        </div>
-                    </ng-template>
-
-                </div>
-            </div>
-        </div> 
-        
 
 
-
-
-            <!--Modal ends here--->
-
-                            <script type="text/javascript">
-                                $(document).on("click", ".open-modal", function () {
-                                    var x = new Date();
-                                    var myHeading = "<p>I Am Added Dynamically </p>";
-                                    $("#modal-body").html(myHeading + x);
-                                    $('#modal').modal('show');
-                                });
-                        
-                            </script>
-                        </div>
+                        <!--<ng-template #editProfileModal let-modal>
+ <div class="modal-header">
+  <h5 class="modal-title" id="editProfileLabel">Edit Profile</h5>
+  <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+   <span aria-hidden="true">&times;</span>
+  </button>
+ </div>
+ 
+ <div class="modal-body">
+  <form [formGroup]="editProfileForm" (ngSubmit)="onSubmit()">
+   <div class="form-group row">
+    <label for="firstname" class="col-sm-4 col-form-label">First Name</label>
+    <div class="col-sm-8">
+     <input type="text" class="form-control" formControlName="firstname" id="firstname">
+    </div>
+   </div>
+   <div class="form-group row">
+    <label for="lastname" class="col-sm-4 col-form-label">Last Name</label>
+    <div class="col-sm-8">
+     <input type="text" class="form-control" formControlName="lastname" id="lastname">
+    </div>
+   </div>
+   <div class="form-group row">
+    <label for="username" class="col-sm-4 col-form-label">Username</label>
+    <div class="col-sm-8">
+     <input type="text" class="form-control" formControlName="username" id="username">
+    </div>
+   </div>
+   <div class="form-group row">
+    <label for="email" class="col-sm-4 col-form-label">Email</label>
+    <div class="col-sm-8">
+     <input type="email" class="form-control" formControlName="email" id="email">
+    </div>
+   </div>
+   <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">Close</button>
+    <button type="submit" class="btn btn-primary">Save changes</button>
+   </div>
+  </form>
+ </div>
+</ng-template>-->
 
 
                     </div>
