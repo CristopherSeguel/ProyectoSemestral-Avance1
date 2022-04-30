@@ -11,8 +11,9 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/Comentarios.js"></script>
+    
 
-    <link href="EstiloMenu.css" rel="stylesheet" type="text/css">
+    <link href="css/EstiloMenu.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -139,39 +140,55 @@
 
                 </article>
 
-                <div class="col-md-6 pane">
+                <div class="col-md-6 ">
                     <div class="col-md-4">
-                        <div class="alert alert-light">
+                        
                             <h4>Comentarios</h4>
-                        </div>
+                        
                     </div>
                     <div id="result">
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
                     </div>
+                    <div class="row">
 
-                    <div class="col-md-8">
-                        <form>
-                            <div class="form-group">
-                                <label> Nombre</label>
-                                <input class="form-control" type="text" id="name">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <label> Nombre</label>
+                                    <input class="form-control" type="text" id="name">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Comentario</label>
-                                <textarea id="comment" class="form-control"></textarea></label>
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="form-group">
+                                        <label>Comentario</label>
+                                        <textarea id="comment" class="form-control" rows="4" maxlength="45"></textarea></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12"></div>
                             </div>
-                            <button type="button" class="btn btn-primary" onclick="commentBox();">Enviar</button>
+                            <div class="row">
+                                <div class="col-md-2">
+
+                                    <button type="button" class="btn btn-primary" onclick="commentBox(); filtro();" >Enviar</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
+    
 
 
             </div>
 
+
+          
 
 
 
@@ -197,15 +214,15 @@
 
 
         </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
 
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 
 
 
