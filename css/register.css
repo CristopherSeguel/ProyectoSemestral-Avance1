@@ -42,7 +42,7 @@
 
   }
   body{
-      background: #E1E8ED;
+      background: #00416A;
       
   }
 
@@ -76,7 +76,7 @@
   }
 
   .formularioConclusion{
-    background: rgba(230, 131, 131, 0.5);
+    background: 	#AAB8C2;
     padding: 50px;
     
   }
@@ -116,8 +116,8 @@
     font-weight: bold;
   }
   h6{
-    color: #1DA1F2;
-    
+    color: #E1E8ED;
+    font-weight: bold;
   }
 
   .minititulos1{
@@ -162,7 +162,7 @@
     color: aliceblue;
   }
   #p_colorAdmin{
-    color: #e68383;
+    color: #1DA1F2;
     font-weight: bold;
   }
 
@@ -233,6 +233,8 @@
     font-weight: bold;
     
   }
+
+  
 
   
   .color_enlace1{
@@ -462,3 +464,7 @@
 
 
 /* end */
+
+
+
+

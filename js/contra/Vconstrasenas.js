@@ -1,8 +1,8 @@
 
 $(function(){
 
-    var mayus = new RegExp("^(?=.*[A-Z].*[A-Z].*[A-Z])");
-    var special = new RegExp("^(?=.*[!@#$%&*].*[!@#$%&*].*[!@#$%&*])");
+    var mayus = new RegExp("^(?=.*[A-Z])");
+    var special = new RegExp("^(?=.*[!@#$%&_*])");
     var numbers = new RegExp("^(?=.*[0-9])"); 
     var lower = new RegExp("^(?=.*[a-z])"); 
     var len = new RegExp("^(?=.{8,})"); 
