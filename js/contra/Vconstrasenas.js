@@ -5,7 +5,7 @@ $(function(){
     var special = new RegExp("^(?=.*[!@#$%&_*])");
     var numbers = new RegExp("^(?=.*[0-9])"); 
     var lower = new RegExp("^(?=.*[a-z])"); 
-    var len = new RegExp("^(?=.{8,})"); 
+    var len = new RegExp("^(?=.{8,20})"); 
 
     var regExp = [mayus,special,numbers,lower,len];
     var elementos = [$("#mayus"),$("#special"),$("#numbers"),$("#lower"),$("#len")];
