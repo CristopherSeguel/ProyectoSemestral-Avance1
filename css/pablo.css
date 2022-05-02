@@ -8,17 +8,17 @@ body {
 }
 
 .cardjuegos {
-  background: rgb(66 31 31);
+  background: #14171A;
 }
 
 .card-img-top {
   height: 400px;
   width: 286px;
-  background-color: #441c1c;
+  background-color: #14171A;
 }
 
 .btn-primary {
-  background-color: #6e2121;
+  background-color: #657786;
   border-color: rgba(8, 8, 8, 0.2);
 }
 
